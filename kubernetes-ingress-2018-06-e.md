@@ -51,6 +51,39 @@ spec:
 
 Ingress背后是Nginx，所以Nginx能实现的Ingress同样可以实现，但是实现方式不太一样，基本都是通过`annotations`实现的，各种配置可以参考文档： <https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/nginx-configuration/annotations.md> 。
 
+## 配置HTTPS
+
+首先创建一个secret资源，来存储秘钥和证书。如果你的证书是.pem的，也是一样的，将下面的your_cert.crt改为your_cert.pem即可。
+
+```lang=sh
+kubectl create secret tls tls_secret_name --key your_key.key --cert your_cert.crt
+```
+
+然后在Ingress的配置文件中添加配置使用这个secret，然后更新配置`kubectl replace -f ingress.yaml`，即可。
+
+```lang=yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: example-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      rewrite /service/(.*) /v1/$1 break;
+spec:
+  tls:
+    - hosts:
+      - example.com
+      secretName: tls_secret_name
+  rules:
+  - host: example.com
+    http:
+      paths:
+      - path: /v1/
+        backend:
+          serviceName: app1
+          servicePort: 8080
+```
+
 ## 总结
 
 本文主要介绍了nginx版本的Ingress的配置。
