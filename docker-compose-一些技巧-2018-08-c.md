@@ -47,3 +47,7 @@ service_name_b
 容器网络使用`host`模式时，容器会使用宿主机`/etc/hosts`中配置的条目，但往往`bridge`网络模式更加实用，但不能使用宿主机的`/etc/hosts`规则，假设我们要让在服务器A部署的服务a访问服务器B部署的数据库b，那么就需要配置`extra_hosts`，借助该参数，我们可以让每个容器都可以使用配置定制的`IP -> name`映射。
 
 ![extra_hosts](./image/docker-extra-hosts.png)
+
+## 配置docker容器使用的宿主机网络
+
+`network_mode: "host"`
