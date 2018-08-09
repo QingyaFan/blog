@@ -23,3 +23,11 @@ nginx:
       - "8001:443"
     restart: always
 ```
+
+## user `docker` without sudo
+
+```sh
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+newgrp docker
+```
