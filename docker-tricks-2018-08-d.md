@@ -31,3 +31,9 @@ sudo groupadd docker
 sudo gpasswd -a $USER docker
 newgrp docker
 ```
+
+## docker volumes
+
+docker容器映射到本机的目录中应该是空文件夹或者和容器内的文件夹结构内容一致，docker容器才能正常启动，尤其注意宿主机的文件夹内有`.`开头的隐藏文件，也应该删除掉才行。
+
+否则会报错： `directory "xxx" exists but is not empty`
