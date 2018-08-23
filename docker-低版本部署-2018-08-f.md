@@ -7,7 +7,8 @@ Docker低版本是指`< 1.10`的版本，在docker发布1.10时有一些不兼�
 涉及兼容性的主要更新有：
 
 - 新增内置的DNS，
-- 镜像的读写层也有更改。
+- 镜像的读写层也有更改，
+- `docker cp`只能从容器内部拷贝文件到容器外。
 
 ## DNS兼容性
 
@@ -27,3 +28,9 @@ Docker低版本是指`< 1.10`的版本，在docker发布1.10时有一些不兼�
 > docker could not resize shared memory segment bytes: Not supported
 
 Google一圈，说`/dev/shm`分配的太小占大多数，想试试，发现低版本docker没办法配置`/dev/shm`的大小。于是将PostgreSQL的Dockerfile放到低版本的docker中构建了一遍，结果可用了。
+
+## `docker cp`只能从容器内部拷贝文件到容器外
+
+如果我们想将一份PostgreSQL dump出来的数据恢复到数据库容器内，需要先将dump的备份文件拷贝到容器内，才能使用`pg_restore`工具恢复到数据库中，这是低版本的docker并不能做到这一点。
+
+这里我们可以使用`volume`达到曲线救国的目的，我们先将数据库容器内的一个无关紧要的目录映射出来，然后将数据库的dump文件拷贝到宿主机的volume中，然后进入容器内的被挂载目录，即可使用`pg_dump`恢复改备份文件。
