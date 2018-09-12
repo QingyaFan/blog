@@ -7,3 +7,4 @@
 - 5. [docker-离线私有部署](https://github.com/QingyaFan/container-cloud/blob/master/docker-%E7%A6%BB%E7%BA%BF%E7%A7%81%E6%9C%89%E9%83%A8%E7%BD%B2-2018-06-d.md)
 - 6. [docker-容器间访问](https://github.com/QingyaFan/container-cloud/blob/master/docker-%E5%AE%B9%E5%99%A8%E9%97%B4%E8%AE%BF%E9%97%AE.md)
 - 7. [docker-低版本部署](https://github.com/QingyaFan/container-cloud/blob/master/docker-%E4%BD%8E%E7%89%88%E6%9C%AC%E9%83%A8%E7%BD%B2-2018-08-f.md)
+- 8. [docker-volumes](https://github.com/QingyaFan/container-cloud/blob/master/docker-volumes-2018-09-b.md)
