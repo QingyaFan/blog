@@ -8,3 +8,4 @@
 - 6. [docker-容器间访问](https://github.com/QingyaFan/container-cloud/blob/master/docker-%E5%AE%B9%E5%99%A8%E9%97%B4%E8%AE%BF%E9%97%AE.md)
 - 7. [docker-低版本部署](https://github.com/QingyaFan/container-cloud/blob/master/docker-%E4%BD%8E%E7%89%88%E6%9C%AC%E9%83%A8%E7%BD%B2-2018-08-f.md)
 - 8. [docker-volumes](https://github.com/QingyaFan/container-cloud/blob/master/docker-volumes-2018-09-b.md)
+- 9. [docker-容器中的Loopback](https://github.com/QingyaFan/container-cloud/blob/master/docker-%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84loopback-2018-09-c.md)
