@@ -1,1 +1,0 @@
-# Kubernetes集群环境中建立Redis集群
