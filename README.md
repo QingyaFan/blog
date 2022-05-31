@@ -17,3 +17,6 @@ Issue可以评论，且方便排版，所以博客放到Issue中写了。
 1. [让Golang的性能发挥出来](https://github.com/QingyaFan/container-cloud/issues/3)
 2. [Golang Tricks](https://github.com/QingyaFan/container-cloud/issues/13)
 3. [用Go写Web应用的一些考虑](https://github.com/QingyaFan/container-cloud/issues/7)
+
+## 其他
+1. [可观测](https://github.com/QingyaFan/container-cloud/issues/18)
