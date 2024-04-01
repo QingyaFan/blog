@@ -2,7 +2,7 @@
 
 ## MLOps
 
-todo:
+1. [神经网络:分清CNN、RNN](https://github.com/QingyaFan/blog/issues/40)
 
 ## Prometheus
 1. [Prometheus横向扩展](https://github.com/QingyaFan/blog/issues/37)
