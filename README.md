@@ -17,3 +17,4 @@
 ## Kuberbetes
 1. [configmap热更新原理](https://github.com/QingyaFan/blog/issues/2)
 2. [Pod生命周期状态](https://github.com/QingyaFan/blog/issues/31)
+3. [如何写CRD](https://github.com/QingyaFan/blog/issues/41)
