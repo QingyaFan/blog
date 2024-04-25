@@ -2,7 +2,7 @@
 
 ## MLOps
 
-1. [神经网络:分清CNN、RNN](https://github.com/QingyaFan/blog/issues/40)
+1. [如何训练一个神经网络](https://github.com/QingyaFan/blog/issues/40)
 
 ## Prometheus
 1. [Prometheus横向扩展](https://github.com/QingyaFan/blog/issues/37)
