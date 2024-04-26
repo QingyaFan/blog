@@ -15,7 +15,6 @@
 2. [Prometheus数据压缩](https://github.com/QingyaFan/blog/issues/38)
 
 ## Golang
-1. [通过可观测分析 go web apiserver 性能](https://github.com/QingyaFan/blog/issues/39)
-2. [使用 go pprof 定位 web apiserver 性能瓶颈](https://github.com/QingyaFan/blog/issues/36)
-3. [单元测试](https://github.com/QingyaFan/blog/issues/27)
-4. [golang基础入门](https://github.com/QingyaFan/blog/issues/13)
+1. [Go 并发模式](https://github.com/QingyaFan/blog/issues/3)
+2. [通过可观测分析 go web apiserver 性能](https://github.com/QingyaFan/blog/issues/39)
+3. [使用 go pprof 定位 web apiserver 性能瓶颈](https://github.com/QingyaFan/blog/issues/36)
