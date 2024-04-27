@@ -15,6 +15,6 @@
 2. [Prometheus数据压缩](https://github.com/QingyaFan/blog/issues/38)
 
 ## Golang
-1. [Go 并发模式](https://github.com/QingyaFan/blog/issues/3)
+1. [GMP：Go 并发的基础](https://github.com/QingyaFan/blog/issues/3)
 2. [通过可观测分析 go web apiserver 性能](https://github.com/QingyaFan/blog/issues/39)
 3. [使用 go pprof 定位 web apiserver 性能瓶颈](https://github.com/QingyaFan/blog/issues/36)
