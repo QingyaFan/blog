@@ -16,5 +16,6 @@
 
 ## Golang
 1. [GMP：Go 并发的基础](https://github.com/QingyaFan/blog/issues/3)
-2. [通过可观测分析 go web apiserver 性能](https://github.com/QingyaFan/blog/issues/39)
-3. [使用 go pprof 定位 web apiserver 性能瓶颈](https://github.com/QingyaFan/blog/issues/36)
+2. [Go 写并发程序的模式](https://github.com/QingyaFan/blog/issues/44)
+3. [通过可观测分析 go web apiserver 性能](https://github.com/QingyaFan/blog/issues/39)
+4. [使用 go pprof 定位 web apiserver 性能瓶颈](https://github.com/QingyaFan/blog/issues/36)
