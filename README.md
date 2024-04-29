@@ -9,6 +9,8 @@
 ## ML/AI
 
 1. [如何训练一个神经网络](https://github.com/QingyaFan/blog/issues/40)
+2. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
+3. [如何使用开源的模型，如llama3、phi-3](https://github.com/QingyaFan/blog/issues/43)
 
 ## 可观测
 1. [Prometheus横向扩展](https://github.com/QingyaFan/blog/issues/37)
