@@ -5,6 +5,7 @@
 2. [Pod生命周期状态](https://github.com/QingyaFan/blog/issues/31)
 3. [如何写CRD](https://github.com/QingyaFan/blog/issues/41)
 4. [OpenKruise的CloneSet如何利用Pod状态实现原地变更](https://github.com/QingyaFan/blog/issues/42)
+4. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
 
 ## ML/AI
 
