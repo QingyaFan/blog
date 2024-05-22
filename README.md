@@ -1,6 +1,9 @@
 # 目录
 
+收藏点star，订阅点watch
+
 ## Golang
+
 1. [GMP：Go 并发的基础](https://github.com/QingyaFan/blog/issues/3)
 2. [Go 写并发程序的模式](https://github.com/QingyaFan/blog/issues/44)
 3. [通过可观测分析 go web apiserver 性能](https://github.com/QingyaFan/blog/issues/39)
@@ -8,6 +11,7 @@
 5. [Go实现一个轻量工作流](https://github.com/QingyaFan/blog/issues/49)
 
 ## Kuberbetes/Docker
+
 1. [Configmap热更新原理](https://github.com/QingyaFan/blog/issues/2)
 2. [Pod生命周期状态](https://github.com/QingyaFan/blog/issues/31)
 3. [如何写CRD](https://github.com/QingyaFan/blog/issues/41)
@@ -23,6 +27,7 @@
 4. [RAG: Retrieval-Augmented Generation](https://github.com/QingyaFan/blog/issues/48)
 
 ## 可观测
+
 1. [Prometheus横向扩展](https://github.com/QingyaFan/blog/issues/37)
 2. [Prometheus数据压缩](https://github.com/QingyaFan/blog/issues/38)
 
