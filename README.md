@@ -12,13 +12,14 @@
 
 ## Kuberbetes/Docker
 
-1. [Kubernetes的核心编排调度能力们](https://github.com/QingyaFan/blog/issues/52)
-2. [Configmap热更新原理](https://github.com/QingyaFan/blog/issues/2)
-3. [Pod生命周期状态](https://github.com/QingyaFan/blog/issues/31)
-4. [如何写CRD](https://github.com/QingyaFan/blog/issues/41)
-5. [OpenKruise的CloneSet如何利用Pod状态实现原地变更](https://github.com/QingyaFan/blog/issues/42)
-6. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
-7. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
+1. [在Kubernetes中使用GPU](https://github.com/QingyaFan/blog/issues/53)
+2. [Kubernetes的核心编排调度能力们](https://github.com/QingyaFan/blog/issues/52)
+3. [Configmap热更新原理](https://github.com/QingyaFan/blog/issues/2)
+4. [Pod生命周期状态](https://github.com/QingyaFan/blog/issues/31)
+5. [如何写CRD](https://github.com/QingyaFan/blog/issues/41)
+6. [OpenKruise的CloneSet如何利用Pod状态实现原地变更](https://github.com/QingyaFan/blog/issues/42)
+7. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
+8. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
 
 ## ML/AI
 
