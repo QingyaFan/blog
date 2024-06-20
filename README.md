@@ -18,9 +18,10 @@
 4. [Pod生命周期状态](https://github.com/QingyaFan/blog/issues/31)
 5. [如何写CRD](https://github.com/QingyaFan/blog/issues/41)
 6. [CRD Controller多副本选主](https://github.com/QingyaFan/blog/issues/55)
-7. [OpenKruise的CloneSet如何利用Pod状态实现原地变更](https://github.com/QingyaFan/blog/issues/42)
-8. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
-9. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
+7. [CRD Controller 事件机制的设计](https://github.com/QingyaFan/blog/issues/58)
+8. [OpenKruise的CloneSet如何利用Pod状态实现原地变更](https://github.com/QingyaFan/blog/issues/42)
+9. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
+10. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
 
 ## ML/AI
 
