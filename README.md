@@ -35,7 +35,3 @@
 1. [Prometheus横向扩展](https://github.com/QingyaFan/blog/issues/37)
 2. [Prometheus数据压缩](https://github.com/QingyaFan/blog/issues/38)
 3. [OpenTelemetry的设计](https://github.com/QingyaFan/blog/issues/57)
-
-## 分布式
-
-1. todo: [基于文件系统的选主算法](https://github.com/QingyaFan/blog/issues/50)
