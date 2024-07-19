@@ -12,16 +12,17 @@
 
 ## Kuberbetes/Docker
 
-1. [在Kubernetes中使用GPU](https://github.com/QingyaFan/blog/issues/53)
-2. [Kubernetes的核心编排调度能力们](https://github.com/QingyaFan/blog/issues/52)
-3. [Configmap热更新原理](https://github.com/QingyaFan/blog/issues/2)
-4. [Pod生命周期状态](https://github.com/QingyaFan/blog/issues/31)
-5. [如何写CRD](https://github.com/QingyaFan/blog/issues/41)
-6. [CRD Controller多副本选主](https://github.com/QingyaFan/blog/issues/55)
-7. [CRD Controller 事件机制的设计](https://github.com/QingyaFan/blog/issues/58)
-8. [OpenKruise的CloneSet如何利用Pod状态实现原地变更](https://github.com/QingyaFan/blog/issues/42)
-9. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
-10. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
+1. [Kubernetes调度原理和扩展方法](https://github.com/QingyaFan/blog/issues/56)
+2. [在Kubernetes中使用GPU](https://github.com/QingyaFan/blog/issues/53)
+3. [Kubernetes的核心编排调度能力们](https://github.com/QingyaFan/blog/issues/52)
+4. [Configmap热更新原理](https://github.com/QingyaFan/blog/issues/2)
+5. [Pod生命周期状态](https://github.com/QingyaFan/blog/issues/31)
+6. [如何写CRD](https://github.com/QingyaFan/blog/issues/41)
+7. [CRD Controller多副本选主](https://github.com/QingyaFan/blog/issues/55)
+8. [CRD Controller 事件机制的设计](https://github.com/QingyaFan/blog/issues/58)
+9. [OpenKruise的CloneSet如何利用Pod状态实现原地变更](https://github.com/QingyaFan/blog/issues/42)
+10. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
+11. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
 
 ## ML/AI
 
