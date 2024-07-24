@@ -24,15 +24,15 @@
 10. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
 11. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
 
+## 可观测
+
+1. [Prometheus横向扩展](https://github.com/QingyaFan/blog/issues/37)
+2. [Prometheus数据压缩](https://github.com/QingyaFan/blog/issues/38)
+3. [OpenTelemetry的设计](https://github.com/QingyaFan/blog/issues/57)
+
 ## ML/AI
 
 1. [如何训练一个神经网络](https://github.com/QingyaFan/blog/issues/40)
 2. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
 3. [如何使用开源的模型，如llama3、phi-3](https://github.com/QingyaFan/blog/issues/43)
 4. [RAG: Retrieval-Augmented Generation](https://github.com/QingyaFan/blog/issues/48)
-
-## 可观测
-
-1. [Prometheus横向扩展](https://github.com/QingyaFan/blog/issues/37)
-2. [Prometheus数据压缩](https://github.com/QingyaFan/blog/issues/38)
-3. [OpenTelemetry的设计](https://github.com/QingyaFan/blog/issues/57)
