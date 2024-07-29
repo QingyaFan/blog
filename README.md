@@ -26,9 +26,10 @@
 
 ## 可观测
 
-1. [Prometheus横向扩展](https://github.com/QingyaFan/blog/issues/37)
-2. [Prometheus数据压缩](https://github.com/QingyaFan/blog/issues/38)
-3. [OpenTelemetry的设计](https://github.com/QingyaFan/blog/issues/57)
+1. [基于 eBPF 的可观测技术](https://github.com/QingyaFan/blog/issues/66)
+2. [OpenTelemetry 的设计](https://github.com/QingyaFan/blog/issues/57)
+3. [Prometheus 横向扩展](https://github.com/QingyaFan/blog/issues/37)
+4. [Prometheus 数据压缩](https://github.com/QingyaFan/blog/issues/38)
 
 ## ML/AI
 
