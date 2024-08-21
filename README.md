@@ -37,7 +37,8 @@
 
 1. [MLflow：端到端的MLOps平台](https://github.com/QingyaFan/blog/issues/71)
 2. [根植Kubernetes的AI/ML系统：Kubeflow](https://github.com/QingyaFan/blog/issues/70)
-3. [如何训练一个神经网络](https://github.com/QingyaFan/blog/issues/40)
-4. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
-5. [如何使用开源的模型，如llama3、phi-3](https://github.com/QingyaFan/blog/issues/43)
-6. [RAG: Retrieval-Augmented Generation](https://github.com/QingyaFan/blog/issues/48)
+3. [深度学习模型与大模型](https://github.com/QingyaFan/blog/issues/75)
+4. [如何训练一个模型](https://github.com/QingyaFan/blog/issues/40)
+5. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
+6. [如何使用开源的模型，如llama3、phi-3](https://github.com/QingyaFan/blog/issues/43)
+7. [RAG: Retrieval-Augmented Generation](https://github.com/QingyaFan/blog/issues/48)
