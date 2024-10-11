@@ -44,3 +44,4 @@
 5. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
 6. [如何把模型变成可访问的推理服务](https://github.com/QingyaFan/blog/issues/43)
 7. [RAG: Retrieval-Augmented Generation](https://github.com/QingyaFan/blog/issues/48)
+8. [入门 AI 绕不开的Python](https://github.com/QingyaFan/blog/issues/78)
