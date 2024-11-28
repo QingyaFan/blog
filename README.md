@@ -42,7 +42,7 @@
 3. [深度学习模型与大模型](https://github.com/QingyaFan/blog/issues/75)
 4. [如何训练一个模型（pre-train）](https://github.com/QingyaFan/blog/issues/40)
 5. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
-6. [如何把模型变成可访问的推理服务](https://github.com/QingyaFan/blog/issues/43)
+6. [把模型变成推理服务](https://github.com/QingyaFan/blog/issues/43)
 7. [RAG: Retrieval-Augmented Generation](https://github.com/QingyaFan/blog/issues/48)
 8. [入门 AI 绕不开的Python](https://github.com/QingyaFan/blog/issues/78)
 9. [使用 vLLM](https://github.com/QingyaFan/blog/issues/85)
