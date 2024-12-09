@@ -46,3 +46,4 @@
 7. [RAG: Retrieval-Augmented Generation](https://github.com/QingyaFan/blog/issues/48)
 8. [入门 AI 绕不开的Python](https://github.com/QingyaFan/blog/issues/78)
 9. [使用 vLLM](https://github.com/QingyaFan/blog/issues/85)
+10. [AI Agent 入门](https://github.com/QingyaFan/blog/issues/91)
