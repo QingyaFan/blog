@@ -12,11 +12,12 @@
 6. [把模型变成推理服务](https://github.com/QingyaFan/blog/issues/43)
 7. [Python入门](https://github.com/QingyaFan/blog/issues/78)
 8. [vLLM入门](https://github.com/QingyaFan/blog/issues/85)
-9. [测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
-10. [RAG入门](https://github.com/QingyaFan/blog/issues/92)
-11. [Agent入门](https://github.com/QingyaFan/blog/issues/91)
-12. [Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
-13. [Prompt入门](https://github.com/QingyaFan/blog/issues/95)
+9. [vLLM部署Embedding模型](https://github.com/QingyaFan/blog/issues/108)
+10. [测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
+11. [RAG入门](https://github.com/QingyaFan/blog/issues/92)
+12. [Agent入门](https://github.com/QingyaFan/blog/issues/91)
+13. [Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
+14. [Prompt入门](https://github.com/QingyaFan/blog/issues/95)
 
 ## Golang
 
