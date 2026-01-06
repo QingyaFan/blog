@@ -4,20 +4,21 @@
 
 ## ML/AI
 
-1. [AI 应用的记忆](https://github.com/QingyaFan/blog/issues/104)
-2. [BERT 系列模型的进化：RoBERTa](https://github.com/QingyaFan/blog/issues/172)
-3. [BERT 系列模型的进化：DeBERTa](https://github.com/QingyaFan/blog/issues/173)
-4. [BERT 系列模型的进化：DeBERTa V3](https://github.com/QingyaFan/blog/issues/174)
-5. [深度学习模型与大模型](https://github.com/QingyaFan/blog/issues/75)
-6. [如何训练一个模型（pre-train）](https://github.com/QingyaFan/blog/issues/40)
-7. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
-8. [把模型变成推理服务](https://github.com/QingyaFan/blog/issues/43)
-9. [vLLM入门](https://github.com/QingyaFan/blog/issues/85)
-10. [Text-Embedding 模型选择](https://github.com/QingyaFan/blog/issues/108)
-11. [测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
-12. [RAG入门](https://github.com/QingyaFan/blog/issues/92)
-13. [Agent入门](https://github.com/QingyaFan/blog/issues/91)
-14. [Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
+1. [智能体与用户间通信协议](https://github.com/QingyaFan/blog/issues/199)
+2. [AI 应用的记忆](https://github.com/QingyaFan/blog/issues/104)
+3. [BERT 系列模型的进化：RoBERTa](https://github.com/QingyaFan/blog/issues/172)
+4. [BERT 系列模型的进化：DeBERTa](https://github.com/QingyaFan/blog/issues/173)
+5. [BERT 系列模型的进化：DeBERTa V3](https://github.com/QingyaFan/blog/issues/174)
+6. [深度学习模型与大模型](https://github.com/QingyaFan/blog/issues/75)
+7. [如何训练一个模型（pre-train）](https://github.com/QingyaFan/blog/issues/40)
+8. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
+9. [把模型变成推理服务](https://github.com/QingyaFan/blog/issues/43)
+10. [vLLM入门](https://github.com/QingyaFan/blog/issues/85)
+11. [Text-Embedding 模型选择](https://github.com/QingyaFan/blog/issues/108)
+12. [测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
+13. [RAG入门](https://github.com/QingyaFan/blog/issues/92)
+14. [Agent入门](https://github.com/QingyaFan/blog/issues/91)
+15. [Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
 
 ## Golang
 
