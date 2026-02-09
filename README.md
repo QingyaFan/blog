@@ -4,16 +4,16 @@
 
 ## ML/AI
 
-1. [AI应用的记忆](https://github.com/QingyaFan/blog/issues/104)
-2. [记忆实现-Mem0](https://github.com/QingyaFan/blog/issues/207)
+1. [【记忆】AI应用的记忆](https://github.com/QingyaFan/blog/issues/104)
+2. [【记忆】记忆实现-Mem0](https://github.com/QingyaFan/blog/issues/207)
 3. [Python 做 AI 应用的性能考虑](https://github.com/QingyaFan/blog/issues/210)
 4. [vLLM 启动时加载 LLM 全过程解析](https://github.com/QingyaFan/blog/issues/202)
 5. [LLM 推理过程详解](https://github.com/QingyaFan/blog/issues/201)
 6. [智能体与用户间通信协议](https://github.com/QingyaFan/blog/issues/199)
 7. [AI 应用的记忆](https://github.com/QingyaFan/blog/issues/104)
-8. [BERT 系列模型的进化：RoBERTa](https://github.com/QingyaFan/blog/issues/172)
-9. [BERT 系列模型的进化：DeBERTa](https://github.com/QingyaFan/blog/issues/173)
-10. [BERT 系列模型的进化：DeBERTa V3](https://github.com/QingyaFan/blog/issues/174)
+8. [【BERT】BERT 系列模型的进化：RoBERTa](https://github.com/QingyaFan/blog/issues/172)
+9. [【BERT】BERT 系列模型的进化：DeBERTa](https://github.com/QingyaFan/blog/issues/173)
+10. [【BERT】BERT 系列模型的进化：DeBERTa V3](https://github.com/QingyaFan/blog/issues/174)
 11. [深度学习模型与大模型](https://github.com/QingyaFan/blog/issues/75)
 12. [如何训练一个模型（pre-train）](https://github.com/QingyaFan/blog/issues/40)
 13. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
