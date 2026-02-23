@@ -6,7 +6,7 @@
 
 1. [【记忆】AI应用的记忆](https://github.com/QingyaFan/blog/issues/104)
 2. [【记忆】记忆实现-Mem0](https://github.com/QingyaFan/blog/issues/207)
-3. 【记忆】Working Memory 中的 Blackboard（黑板）](https://github.com/QingyaFan/blog/issues/218)
+3. [【记忆】Working Memory 中的 Blackboard（黑板）](https://github.com/QingyaFan/blog/issues/218)
 4. [【工程】Python 做 AI 应用的性能考虑](https://github.com/QingyaFan/blog/issues/210)
 5. [【推理】vLLM 启动时加载 LLM 全过程解析](https://github.com/QingyaFan/blog/issues/202)
 6. [【推理】推理引擎的 KV cache](https://github.com/QingyaFan/blog/issues/190)
