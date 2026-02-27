@@ -23,10 +23,10 @@
 17. [如何训练一个模型（pre-train）](https://github.com/QingyaFan/blog/issues/40)
 18. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
 19. [把模型变成推理服务](https://github.com/QingyaFan/blog/issues/43)
-20. [vLLM入门](https://github.com/QingyaFan/blog/issues/85)
+20. [【推理】vLLM入门](https://github.com/QingyaFan/blog/issues/85)
 21. [Text-Embedding 模型选择](https://github.com/QingyaFan/blog/issues/108)
 22. [测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
-23. [RAG入门](https://github.com/QingyaFan/blog/issues/92)
+23. [【RAG】RAG入门](https://github.com/QingyaFan/blog/issues/92)
 24. [Agent入门](https://github.com/QingyaFan/blog/issues/91)
 25. [Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
 
