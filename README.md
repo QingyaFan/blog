@@ -4,7 +4,7 @@
 
 ## ML/AI
 
-1. [【记忆】AI应用的记忆](https://github.com/QingyaFan/blog/issues/104)
+1. [【记忆】AI Agent 的记忆：分类、来源、写入与使用](https://github.com/QingyaFan/blog/issues/104)
 2. [【记忆】记忆实现-Mem0](https://github.com/QingyaFan/blog/issues/207)
 3. [【记忆】Working Memory 中的 Blackboard（黑板）](https://github.com/QingyaFan/blog/issues/218)
 4. [【工程】Python 做 AI 应用的性能考虑](https://github.com/QingyaFan/blog/issues/210)
