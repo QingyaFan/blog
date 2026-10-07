@@ -7,7 +7,7 @@
 1. [【Harness 工程】从裸循环到可验证运行时 2026/10/07 ](https://github.com/QingyaFan/blog/issues/231)
 2. [【智能体 + 知识库】效果优化 2026/10/05](https://github.com/QingyaFan/blog/issues/246)
 3. [【智能体评测】方法论全景与框架选型 2026/10/03](https://github.com/QingyaFan/blog/issues/245)
-4. [【知识库】AI 知识库的技术迭代 2026/10/03 ](https://github.com/QingyaFan/blog/issues/244)
+4. [【知识库】AI 知识库演进：从经典检索到 Agentic RAG — 2026/10/03 ](https://github.com/QingyaFan/blog/issues/244)
 5. [【Agent 记忆】AI Agent 的记忆：分类、来源、写入与使用 2026/10/02](https://github.com/QingyaFan/blog/issues/104)
 6. [【记忆】记忆实现-Mem0](https://github.com/QingyaFan/blog/issues/207)
 7. [【记忆】Working Memory 中的 Blackboard（黑板）](https://github.com/QingyaFan/blog/issues/218)
