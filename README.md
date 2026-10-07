@@ -4,8 +4,8 @@
 
 ## ML/AI
 
-1. [【Harness 工程】从裸循环到可验证运行时 2026/10/07](https://github.com/QingyaFan/blog/issues/231)
-2. [【智能体 + 知识库】效果优化](https://github.com/QingyaFan/blog/issues/246)
+1. [2026/10/07 【Harness 工程】从裸循环到可验证运行时](https://github.com/QingyaFan/blog/issues/231)
+2. [2026/10/06 【智能体 + 知识库】效果优化](https://github.com/QingyaFan/blog/issues/246)
 3. [【智能体评测】方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)
 4. [【知识库】AI 知识库的技术迭代](https://github.com/QingyaFan/blog/issues/244)
 5. [【Agent 记忆】AI Agent 的记忆：分类、来源、写入与使用](https://github.com/QingyaFan/blog/issues/104)
