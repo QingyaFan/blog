@@ -31,7 +31,6 @@
 25. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
 26. [把模型变成推理服务](https://github.com/QingyaFan/blog/issues/43)
 27. [【推理】vLLM入门](https://github.com/QingyaFan/blog/issues/85)
-28. [Text-Embedding 模型选择](https://github.com/QingyaFan/blog/issues/108)
 29. [测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
 31. [Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
 
