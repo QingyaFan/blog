@@ -32,8 +32,6 @@
 26. [【推理】vLLM入门](https://github.com/QingyaFan/blog/issues/85)
 27. [Text-Embedding 模型选择](https://github.com/QingyaFan/blog/issues/108)
 28. [测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
-29. [【RAG】RAG入门](https://github.com/QingyaFan/blog/issues/92)
-30. [Agent入门](https://github.com/QingyaFan/blog/issues/91)
 31. [Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
 
 ## Golang
