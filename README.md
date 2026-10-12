@@ -26,12 +26,12 @@
 20. [【模型】BERT 系列模型的进化：DeBERTa](https://github.com/QingyaFan/blog/issues/173)
 21. [【模型】BERT 系列模型的进化：DeBERTa V3](https://github.com/QingyaFan/blog/issues/174)
 22. [【模型-压缩】模型压缩方法概述](https://github.com/QingyaFan/blog/issues/217)
-23. [深度学习模型与大模型](https://github.com/QingyaFan/blog/issues/75)
+23. [【模型】深度学习模型与大模型](https://github.com/QingyaFan/blog/issues/75)
 24. [如何训练一个模型（pre-train）](https://github.com/QingyaFan/blog/issues/40)
-25. [如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
+25. [【模型训练】如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
 27. [【推理】vLLM入门](https://github.com/QingyaFan/blog/issues/85)
-29. [测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
-31. [Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
+29. [【推理】测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
+31. [【智能体】Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
 
 ## Golang
 
