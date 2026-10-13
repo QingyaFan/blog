@@ -14,7 +14,7 @@
 8. [【Agent 知识库】AI 知识库演进：从经典检索到 Agentic RAG — 2026/10/03 ](https://github.com/QingyaFan/blog/issues/244)
 9. [【Agent 记忆】AI Agent 的记忆：分类、来源、写入与使用 — 2026/10/02](https://github.com/QingyaFan/blog/issues/104)
 10. [【Agent 记忆】Working Memory 中的 Blackboard（黑板）](https://github.com/QingyaFan/blog/issues/218)
-11. [【工程】Python 做 AI 应用的性能考虑](https://github.com/QingyaFan/blog/issues/210)
+11. [【工程】Python 做 AI 应用的性能考虑 — 2026/07/22](https://github.com/QingyaFan/blog/issues/210)
 12. [【推理】vLLM 启动时加载 LLM 全过程解析](https://github.com/QingyaFan/blog/issues/202)
 13. [【推理】推理引擎的 KV cache](https://github.com/QingyaFan/blog/issues/190)
 14. [【推理】LLM 推理过程详解](https://github.com/QingyaFan/blog/issues/201)
