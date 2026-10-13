@@ -19,7 +19,7 @@
 13. [【推理】推理引擎的 KV cache](https://github.com/QingyaFan/blog/issues/190)
 14. [【推理】LLM 推理过程详解](https://github.com/QingyaFan/blog/issues/201)
 15. [【推理】推理引擎与GPU环境](https://github.com/QingyaFan/blog/issues/212)
-16. [【智能体】智能体与用户间通信协议](https://github.com/QingyaFan/blog/issues/199)
+16. [【智能体】智能体与用户的交互协议：AG-UI 与 A2UI — 2026/10/13](https://github.com/QingyaFan/blog/issues/199)
 17. [【智能体】AG-UI协议](https://github.com/QingyaFan/blog/issues/191)
 18. [【智能体】智能体系统中两个角色：System和LLM](https://github.com/QingyaFan/blog/issues/220)
 19. [【模型】BERT 系列模型的进化：RoBERTa](https://github.com/QingyaFan/blog/issues/172)
