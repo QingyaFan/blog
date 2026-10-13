@@ -31,7 +31,7 @@
 25. [【模型训练】如何微调一个模型（fine-tune）](https://github.com/QingyaFan/blog/issues/45)
 27. [【推理】vLLM入门](https://github.com/QingyaFan/blog/issues/85)
 29. [【推理】测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
-31. [【智能体】Tool-Calling入门](https://github.com/QingyaFan/blog/issues/96)
+31. [【智能体】Tool-Calling 全链路：模型只提议，其余都是工程 — 2026/10/13](https://github.com/QingyaFan/blog/issues/96)
 
 ## Golang
 
