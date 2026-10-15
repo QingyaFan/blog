@@ -30,16 +30,13 @@
 29. [【推理】测试大模型的推理性能](https://github.com/QingyaFan/blog/issues/93)
 31. [【智能体】Tool-Calling 全链路：模型只提议，其余都是工程 — 2026/10/13](https://github.com/QingyaFan/blog/issues/96)
 
-## Golang
+## Cloud Native
 
 1. [GMP：Go 并发的基础](https://github.com/QingyaFan/blog/issues/3)
 2. [Go 写并发程序的模式](https://github.com/QingyaFan/blog/issues/44)
 3. [通过可观测分析 go web apiserver 性能](https://github.com/QingyaFan/blog/issues/39)
 4. [使用 go pprof 定位 web apiserver 性能瓶颈](https://github.com/QingyaFan/blog/issues/36)
 5. [Go实现一个轻量工作流](https://github.com/QingyaFan/blog/issues/49)
-
-## Kuberbetes/Docker
-
 1. [PaaS应该是一种什么形态？](https://github.com/QingyaFan/blog/issues/73)
 2. [Kubernetes调度原理和扩展方法](https://github.com/QingyaFan/blog/issues/56)
 3. [调度：koordinator 如何支持混布](https://github.com/QingyaFan/blog/issues/72)
@@ -54,9 +51,6 @@
 12. [OpenKruise的CloneSet如何利用Pod状态实现原地变更](https://github.com/QingyaFan/blog/issues/42)
 13. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
 14. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
-
-## 可观测
-
 1. [基于可观测生态的 AIOps](https://github.com/QingyaFan/blog/issues/68)
 2. [基于 eBPF 的可观测技术](https://github.com/QingyaFan/blog/issues/66)
 3. [OpenTelemetry 的设计](https://github.com/QingyaFan/blog/issues/57)
