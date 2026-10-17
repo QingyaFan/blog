@@ -11,7 +11,7 @@
 5. [【Agent Skill】 最佳实践：写法、反模式与有证据的取舍 — 2026/10/12](https://github.com/QingyaFan/blog/issues/232)
 6. [【Agent Skill】从哪里来，能做什么，走到哪一步了 — 2026/10/11](https://github.com/QingyaFan/blog/issues/249)
 7. [【模型】决策模型与 Decision API：把「判断」从生成模型里拆出来 — 2026/10/10](https://github.com/QingyaFan/blog/issues/248)
-8. [【Harness 工程】从裸循环到可验证运行时 — 2026/10/07 ](https://github.com/QingyaFan/blog/issues/231)
+8. [【智能体-工程】Harness Engineering：从裸循环到可验证运行时 — 2026/10/07 ](https://github.com/QingyaFan/blog/issues/231)
 9. [【智能体 + 知识库】智能体 + 知识库优化：哪些手段常用、哪些被高估 — 2026/10/05](https://github.com/QingyaFan/blog/issues/246)
 10. [【智能体评测】方法论全景与框架选型 — 2026/10/03](https://github.com/QingyaFan/blog/issues/245)
 11. [【Agent 知识库】AI 知识库演进：从经典检索到 Agentic RAG — 2026/10/03 ](https://github.com/QingyaFan/blog/issues/244)
