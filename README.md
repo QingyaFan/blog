@@ -55,7 +55,6 @@
 12. [OpenKruise的CloneSet如何利用Pod状态实现原地变更](https://github.com/QingyaFan/blog/issues/42)
 13. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
 14. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
-1. [基于可观测生态的 AIOps](https://github.com/QingyaFan/blog/issues/68)
 3. [OpenTelemetry 的设计](https://github.com/QingyaFan/blog/issues/57)
 4. [Prometheus 横向扩展](https://github.com/QingyaFan/blog/issues/37)
 5. [Prometheus 数据压缩](https://github.com/QingyaFan/blog/issues/38)
