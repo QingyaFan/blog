@@ -56,7 +56,6 @@
 13. [Kubernetes的组件以及交互过程](https://github.com/QingyaFan/blog/issues/46)
 14. [Docker的隔离原理](https://github.com/QingyaFan/blog/issues/47)
 1. [基于可观测生态的 AIOps](https://github.com/QingyaFan/blog/issues/68)
-2. [基于 eBPF 的可观测技术](https://github.com/QingyaFan/blog/issues/66)
 3. [OpenTelemetry 的设计](https://github.com/QingyaFan/blog/issues/57)
 4. [Prometheus 横向扩展](https://github.com/QingyaFan/blog/issues/37)
 5. [Prometheus 数据压缩](https://github.com/QingyaFan/blog/issues/38)
