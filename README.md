@@ -43,7 +43,6 @@
 5. [Go实现一个轻量工作流](https://github.com/QingyaFan/blog/issues/49)
 1. [PaaS应该是一种什么形态？](https://github.com/QingyaFan/blog/issues/73)
 2. [Kubernetes调度原理和扩展方法](https://github.com/QingyaFan/blog/issues/56)
-3. [调度：koordinator 如何支持混布](https://github.com/QingyaFan/blog/issues/72)
 4. [Batch Schedule 和 Volcano 的实现](https://github.com/QingyaFan/blog/issues/65)
 5. [Kubernetes编排原理和定制（CRD）](https://github.com/QingyaFan/blog/issues/41)
 6. [CRD Controller多副本选主](https://github.com/QingyaFan/blog/issues/55)
