@@ -36,11 +36,12 @@
 
 ## Cloud Native
 
-1. [GMP：Go 并发的基础](https://github.com/QingyaFan/blog/issues/3)
-2. [Go 写并发程序的模式](https://github.com/QingyaFan/blog/issues/44)
-3. [通过可观测分析 go web apiserver 性能](https://github.com/QingyaFan/blog/issues/39)
-4. [使用 go pprof 定位 web apiserver 性能瓶颈](https://github.com/QingyaFan/blog/issues/36)
-5. [Go实现一个轻量工作流](https://github.com/QingyaFan/blog/issues/49)
+1. [【Kubernetes】CRD 设计：什么时候需要 Claim — 2026/10/22](https://github.com/QingyaFan/blog/issues/256)
+2. [GMP：Go 并发的基础](https://github.com/QingyaFan/blog/issues/3)
+3. [Go 写并发程序的模式](https://github.com/QingyaFan/blog/issues/44)
+4. [通过可观测分析 go web apiserver 性能](https://github.com/QingyaFan/blog/issues/39)
+5. [使用 go pprof 定位 web apiserver 性能瓶颈](https://github.com/QingyaFan/blog/issues/36)
+6. [Go实现一个轻量工作流](https://github.com/QingyaFan/blog/issues/49)
 1. [PaaS应该是一种什么形态？](https://github.com/QingyaFan/blog/issues/73)
 2. [Kubernetes调度原理和扩展方法](https://github.com/QingyaFan/blog/issues/56)
 4. [Batch Schedule 和 Volcano 的实现](https://github.com/QingyaFan/blog/issues/65)
