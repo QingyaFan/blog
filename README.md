@@ -4,32 +4,32 @@
 
 ## 系列
 
-按阅读顺序整理的系列入口；单篇索引见下方 ML/AI。
-
 ### 从零训练一个 360M 语言模型
 
 固定双卡预算下，从规划、数据、评测一路做到 SFT、偏好优化与 RLHF。按训练生命周期顺序阅读。
 
-| #    | 文章                                                      | 状态       |
-| ---- | --------------------------------------------------------- | ---------- |
-| 总纲 | 从零训练一个 360M 语言模型：系列总纲                      | 待发布     |
-| 1    | 规划与验证：算力预算、MFU 标定与最小闭环                  | 待发布     |
-| 2-10 | 数据、Tokenizer、评测、预训练、SFT、DPO、RLHF、迭代、复盘 | 随发布追加 |
+| #    | 文章                                                                                     |
+| ---- | ---------------------------------------------------------------------------------------- |
+| 总纲 | [从零训练一个 360M 语言模型：系列总纲](https://github.com/QingyaFan/blog/issues/257)     |
+| 1    | [规划与验证：算力预算、MFU 标定与最小闭环](https://github.com/QingyaFan/blog/issues/258) |
+
+第 2-10 篇（数据、Tokenizer、评测、预训练、SFT、DPO、RLHF、迭代、复盘）随发布追加。
 
 ### Agent Harness 工程
 
-理论篇回答“为什么”，实现篇回答“怎么落地”。建议从实现篇导读开始，再按阅读路径选读。
+理论篇回答“为什么”，实现篇回答“怎么落地”。
 
-| 篇目  | 文章                                                                                        | 状态       |
-| ----- | ------------------------------------------------------------------------------------------- | ---------- |
-| T0    | [Harness Engineering：从裸循环到可验证运行时](https://github.com/QingyaFan/blog/issues/231) | 已发布     |
-| T1    | [Loop Engineering：让循环可信](https://github.com/QingyaFan/blog/issues/254)                | 已发布     |
-| T2    | [Graph Engineering：让图可信](https://github.com/QingyaFan/blog/issues/255)                 | 已发布     |
-| T3    | [拆解 Claude Code 的 Harness](https://github.com/QingyaFan/blog/issues/233)                 | 已发布     |
-| T4    | [智能体评测：方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)            | 已发布     |
-| I0    | 从零打造 Agent Harness：实现篇导读                                                          | 待发布     |
-| I1    | 从零打造 Agent Harness：最小循环                                                            | 待发布     |
-| I2–I7 | 工具事务、上下文预算、生命周期、权限与沙箱、技能、观测与评测                                | 随发布追加 |
+| 分类   | 文章                                                                                        |
+| ------ | ------------------------------------------------------------------------------------------- |
+| 理论篇 | [Harness Engineering：从裸循环到可验证运行时](https://github.com/QingyaFan/blog/issues/231) |
+| 理论篇 | [Loop Engineering：让循环可信](https://github.com/QingyaFan/blog/issues/254)                |
+| 理论篇 | [Graph Engineering：让图可信](https://github.com/QingyaFan/blog/issues/255)                 |
+| 理论篇 | [拆解 Claude Code 的 Harness](https://github.com/QingyaFan/blog/issues/233)                 |
+| 理论篇 | [智能体评测：方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)            |
+| 实现篇 | 从零打造 Agent Harness：实现篇导读（待发布）                                                |
+| 实现篇 | 从零打造 Agent Harness：最小循环（待发布）                                                  |
+
+实现篇其余内容（工具事务、上下文预算、生命周期、权限与沙箱、技能、观测与评测）随发布追加。
 
 ## ML/AI
 
