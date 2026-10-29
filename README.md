@@ -19,17 +19,18 @@
 
 理论篇回答“为什么”，实现篇回答“怎么落地”。
 
-| 分类   | 文章                                                                                        |
-| ------ | ------------------------------------------------------------------------------------------- |
-| 理论篇 | [Harness Engineering：从裸循环到可验证运行时](https://github.com/QingyaFan/blog/issues/231) |
-| 理论篇 | [Loop Engineering：让循环可信](https://github.com/QingyaFan/blog/issues/254)                |
-| 理论篇 | [Graph Engineering：让图可信](https://github.com/QingyaFan/blog/issues/255)                 |
-| 理论篇 | [拆解 Claude Code 的 Harness](https://github.com/QingyaFan/blog/issues/233)                 |
-| 理论篇 | [智能体评测：方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)            |
-| 实现篇 | [从零打造 Agent Harness：实现篇导读](https://github.com/QingyaFan/blog/issues/259)          |
-| 实现篇 | [最小循环：让 Agent 跑起来](https://github.com/QingyaFan/blog/issues/260)                   |
+| 编号 | 分类   | 文章                                                                                        |
+| ---- | ------ | ------------------------------------------------------------------------------------------- |
+| T0   | 理论篇 | [Harness Engineering：从裸循环到可验证运行时](https://github.com/QingyaFan/blog/issues/231) |
+| T1   | 理论篇 | [Loop Engineering：让循环可信](https://github.com/QingyaFan/blog/issues/254)                |
+| T2   | 理论篇 | [Graph Engineering：让图可信](https://github.com/QingyaFan/blog/issues/255)                 |
+| T3   | 理论篇 | [拆解 Claude Code 的 Harness](https://github.com/QingyaFan/blog/issues/233)                 |
+| T4   | 理论篇 | [智能体评测：方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)            |
+| I0   | 实现篇 | [从零打造 Agent Harness：实现篇导读](https://github.com/QingyaFan/blog/issues/259)          |
+| I1   | 实现篇 | [最小循环：让 Agent 跑起来](https://github.com/QingyaFan/blog/issues/260)                   |
+| I2   | 实现篇 | [工具事务：让失败可归因、可重试](https://github.com/QingyaFan/blog/issues/261)              |
 
-实现篇其余内容（工具事务、上下文预算、生命周期、权限与沙箱、技能、观测与评测）随发布追加。
+实现篇其余内容（上下文预算、生命周期、权限与沙箱、技能、观测与评测）随发布追加。
 
 ## ML/AI
 
