@@ -29,8 +29,12 @@
 | I0   | 实现篇 | [从零打造 Agent Harness：实现篇导读](https://github.com/QingyaFan/blog/issues/259)          |
 | I1   | 实现篇 | [最小循环：让 Agent 跑起来](https://github.com/QingyaFan/blog/issues/260)                   |
 | I2   | 实现篇 | [工具事务：让失败可归因、可重试](https://github.com/QingyaFan/blog/issues/261)              |
+| I3   | 实现篇 | [上下文预算：让该看的留下，丢掉的留痕](https://github.com/QingyaFan/blog/issues/262)        |
+| I4   | 实现篇 | [生命周期：让中断的运行有交代、能接续](https://github.com/QingyaFan/blog/issues/263)        |
+| I5   | 实现篇 | [权限与沙箱：让否决改变控制流](https://github.com/QingyaFan/blog/issues/264)                |
+| I6   | 实现篇 | [技能：让上下文只为用到的那一层付费](https://github.com/QingyaFan/blog/issues/265)          |
 
-实现篇其余内容（上下文预算、生命周期、权限与沙箱、技能、观测与评测）随发布追加。
+实现篇其余内容（I7 观测与评测、I8 记忆、I9 Prompt 装配）随发布追加。
 
 ## ML/AI
 
