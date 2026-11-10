@@ -33,8 +33,9 @@
 | I4   | 实现篇 | [生命周期：让中断的运行有交代、能接续](https://github.com/QingyaFan/blog/issues/263)        |
 | I5   | 实现篇 | [权限与沙箱：让否决改变控制流](https://github.com/QingyaFan/blog/issues/264)                |
 | I6   | 实现篇 | [技能：让上下文只为用到的那一层付费](https://github.com/QingyaFan/blog/issues/265)          |
+| I7   | 实现篇 | [观测与评测：把运行变成可复现读数](https://github.com/QingyaFan/blog/issues/266)            |
 
-实现篇其余内容（I7 观测与评测、I8 记忆、I9 Prompt 装配）随发布追加。
+实现篇其余内容（I8 记忆、I9 Prompt 装配）随发布追加。
 
 ## ML/AI
 

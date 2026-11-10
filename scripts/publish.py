@@ -223,7 +223,7 @@ def main():
             {
                 "issue": remote["number"],
                 "title": remote["title"],
-                "state": remote["state"],
+                "state": remote["state"].lower(),
                 "created": remote["createdAt"][:10],
                 "updated": remote["updatedAt"][:10],
                 "url": remote["url"],
