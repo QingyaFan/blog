@@ -26,7 +26,7 @@
 | T2   | 理论篇 | [Graph Engineering：让图可信](https://github.com/QingyaFan/blog/issues/255)                 |
 | T3   | 理论篇 | [拆解 Claude Code 的 Harness](https://github.com/QingyaFan/blog/issues/233)                 |
 | T4   | 理论篇 | [智能体评测：方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)            |
-| I0   | 实现篇 | [从零打造 Agent Harness：实现篇导读](https://github.com/QingyaFan/blog/issues/259)          |
+| I0   | 实现篇 | [Agent 一上长任务就崩？从零打造可验证 Harness 的 9 层路线](https://github.com/QingyaFan/blog/issues/259)          |
 | I1   | 实现篇 | [最小循环：让 Agent 跑起来](https://github.com/QingyaFan/blog/issues/260)                   |
 | I2   | 实现篇 | [工具事务：让失败可归因、可重试](https://github.com/QingyaFan/blog/issues/261)              |
 | I3   | 实现篇 | [上下文预算：让该看的留下，丢掉的留痕](https://github.com/QingyaFan/blog/issues/262)        |
