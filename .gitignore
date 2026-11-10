@@ -1,2 +1,16 @@
 *.md
 !README.md
+
+# 本地写作副本与索引
+thoughts/
+POSTS.md
+
+# 同步生成的 issue 配图（只留本地，不进公开仓库）
+images/issue-*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 编辑器
+.vscode/
