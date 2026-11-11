@@ -33,8 +33,9 @@
 | I6   | 实现篇 | [技能：让上下文只为用到的那一层付费](https://github.com/QingyaFan/blog/issues/265)          |
 | I7   | 实现篇 | [观测与评测：把运行变成可复现读数](https://github.com/QingyaFan/blog/issues/266)            |
 | I8   | 实现篇 | [记忆：让跨运行的事实接得上](https://github.com/QingyaFan/blog/issues/267)                  |
+| I9   | 实现篇 | [Prompt 装配：把各层拼成一次请求](https://github.com/QingyaFan/blog/issues/268)             |
 
-实现篇其余内容（I9 Prompt 装配）随发布追加。
+实现篇 I0–I9 已完结。
 
 ### 进阶：控制流与图编排
 
