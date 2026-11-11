@@ -32,8 +32,9 @@
 | I5   | 实现篇 | [权限与沙箱：让否决改变控制流](https://github.com/QingyaFan/blog/issues/264)                |
 | I6   | 实现篇 | [技能：让上下文只为用到的那一层付费](https://github.com/QingyaFan/blog/issues/265)          |
 | I7   | 实现篇 | [观测与评测：把运行变成可复现读数](https://github.com/QingyaFan/blog/issues/266)            |
+| I8   | 实现篇 | [记忆：让跨运行的事实接得上](https://github.com/QingyaFan/blog/issues/267)                  |
 
-实现篇其余内容（I8 记忆、I9 Prompt 装配）随发布追加。
+实现篇其余内容（I9 Prompt 装配）随发布追加。
 
 ### 进阶：控制流与图编排
 
