@@ -22,8 +22,8 @@
 | 编号 | 分类   | 文章                                                                                        |
 | ---- | ------ | ------------------------------------------------------------------------------------------- |
 | T0   | 理论篇 | [Harness Engineering：从裸循环到可验证运行时](https://github.com/QingyaFan/blog/issues/231) |
-| T3   | 参考篇 | [拆解 Claude Code 的 Harness](https://github.com/QingyaFan/blog/issues/233)                 |
-| T4   | 参考篇 | [智能体评测：方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)            |
+| T1   | 理论篇 | [拆解 Claude Code 的 Harness](https://github.com/QingyaFan/blog/issues/233)                 |
+| T2   | 理论篇 | [智能体评测：方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)            |
 | I0   | 实现篇 | [Agent 一上长任务就崩？从零打造可验证 Harness 的 9 层路线](https://github.com/QingyaFan/blog/issues/259)          |
 | I1   | 实现篇 | [最小循环：让 Agent 跑起来](https://github.com/QingyaFan/blog/issues/260)                   |
 | I2   | 实现篇 | [工具事务：让失败可归因、可重试](https://github.com/QingyaFan/blog/issues/261)              |
@@ -41,8 +41,8 @@ Harness 核心稳定之后，如果单个循环不够用，再进入控制流与
 
 | 编号 | 文章 |
 | --- | --- |
-| T1 | [Loop Engineering：让循环可信](https://github.com/QingyaFan/blog/issues/254) |
-| T2 | [Graph Engineering：让图可信](https://github.com/QingyaFan/blog/issues/255) |
+| A1 | [Loop Engineering：让循环可信](https://github.com/QingyaFan/blog/issues/254) |
+| A2 | [Graph Engineering：让图可信](https://github.com/QingyaFan/blog/issues/255) |
 
 ## ML/AI
 
