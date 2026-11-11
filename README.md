@@ -24,16 +24,16 @@
 | T0   | 理论篇 | [Harness Engineering：从裸循环到可验证运行时](https://github.com/QingyaFan/blog/issues/231) |
 | T1   | 理论篇 | [拆解 Claude Code 的 Harness](https://github.com/QingyaFan/blog/issues/233)                 |
 | T2   | 理论篇 | [智能体评测：方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)            |
-| I0   | 实现篇 | [Agent 一上长任务就崩？从零打造可验证 Harness 的 9 层路线](https://github.com/QingyaFan/blog/issues/259)          |
-| I1   | 实现篇 | [最小循环：让 Agent 跑起来](https://github.com/QingyaFan/blog/issues/260)                   |
-| I2   | 实现篇 | [工具事务：让失败可归因、可重试](https://github.com/QingyaFan/blog/issues/261)              |
-| I3   | 实现篇 | [上下文预算：让该看的留下，丢掉的留痕](https://github.com/QingyaFan/blog/issues/262)        |
-| I4   | 实现篇 | [生命周期：让中断的运行有交代、能接续](https://github.com/QingyaFan/blog/issues/263)        |
-| I5   | 实现篇 | [权限与沙箱：让否决改变控制流](https://github.com/QingyaFan/blog/issues/264)                |
-| I6   | 实现篇 | [技能：让上下文只为用到的那一层付费](https://github.com/QingyaFan/blog/issues/265)          |
-| I7   | 实现篇 | [观测与评测：把运行变成可复现读数](https://github.com/QingyaFan/blog/issues/266)            |
-| I8   | 实现篇 | [记忆：让跨运行的事实接得上](https://github.com/QingyaFan/blog/issues/267)                  |
-| I9   | 实现篇 | [Prompt 装配：把各层拼成一次请求](https://github.com/QingyaFan/blog/issues/268)             |
+| I0   | 实现篇 | [Agent 一上长任务就崩？从零打造可验证 Harness 的 9 层路线（I0 导读）](https://github.com/QingyaFan/blog/issues/259)          |
+| I1   | 实现篇 | [最小循环：让 Agent 跑起来（I1）](https://github.com/QingyaFan/blog/issues/260)                   |
+| I2   | 实现篇 | [工具事务：让失败可归因、可重试（I2）](https://github.com/QingyaFan/blog/issues/261)              |
+| I3   | 实现篇 | [上下文预算：让该看的留下，丢掉的留痕（I3）](https://github.com/QingyaFan/blog/issues/262)        |
+| I4   | 实现篇 | [生命周期：让中断的运行有交代、能接续（I4）](https://github.com/QingyaFan/blog/issues/263)        |
+| I5   | 实现篇 | [权限与沙箱：让否决改变控制流（I5）](https://github.com/QingyaFan/blog/issues/264)                |
+| I6   | 实现篇 | [技能：让上下文只为用到的那一层付费（I6）](https://github.com/QingyaFan/blog/issues/265)          |
+| I7   | 实现篇 | [观测与评测：把运行变成可复现读数（I7）](https://github.com/QingyaFan/blog/issues/266)            |
+| I8   | 实现篇 | [记忆：让跨运行的事实接得上（I8）](https://github.com/QingyaFan/blog/issues/267)                  |
+| I9   | 实现篇 | [Prompt 装配：把各层拼成一次请求（I9）](https://github.com/QingyaFan/blog/issues/268)             |
 
 实现篇 I0–I9 已完结。
 
