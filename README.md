@@ -40,6 +40,7 @@
 **扩展**
 
 - E1 [断点续跑实战：一次崩溃恢复的完整时间线（E1）](https://github.com/QingyaFan/blog/issues/269)
+- E2 [自进化：从经验沉淀到可回滚发布（E2）](https://github.com/QingyaFan/blog/issues/270)
 
 ### 进阶：控制流与图编排
 
