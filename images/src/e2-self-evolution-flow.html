@@ -10,10 +10,10 @@
     --ink:#1C2430; --text:#3D4855; --muted:#7A8492; --line:#C6CDD8; --wash:#F3F5F8;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;width:1280px;height:1000px;overflow:hidden;background:#fff;color:var(--text);
+  html,body{margin:0;width:1280px;height:960px;overflow:hidden;background:#fff;color:var(--text);
     font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",Arial,sans-serif}
   body{box-shadow:inset 0 0 0 1px var(--line)}
-  .canvas{position:relative;width:1280px;height:1000px}
+  .canvas{position:relative;width:1280px;height:960px}
   .zone-title{position:absolute;z-index:5;font-size:22px;font-weight:700;color:var(--ink);letter-spacing:.5px}
   .zone-title span{font-size:18px;font-weight:400;color:var(--muted);margin-left:12px;letter-spacing:0}
   .panel{position:absolute;z-index:0;border:1.5px solid #D5DCE5;border-radius:12px;
@@ -47,10 +47,8 @@
   .result.audit{border-top-color:var(--muted)}
   .loop-label{position:absolute;z-index:5;left:555px;top:908px;background:#fff;padding:0 10px;
     font-size:18px;color:var(--muted)}
-  .watermark{position:absolute;z-index:5;left:0;bottom:0;width:1280px;height:40px;
-    border-top:1px solid #E0E4EA;background:#fff;display:flex;align-items:center;
-    justify-content:flex-end;padding:0 40px;font-size:14px;color:#8A94A3;letter-spacing:.2px}
-  .wires{position:absolute;inset:0;width:1280px;height:1000px;z-index:1;pointer-events:none;overflow:visible}
+  .watermark{position:absolute;z-index:4;left:0;top:0;width:1280px;height:960px;pointer-events:none}
+  .wires{position:absolute;inset:0;width:1280px;height:960px;z-index:1;pointer-events:none;overflow:visible}
 </style>
 </head>
 <body>
@@ -126,9 +124,19 @@
 
   <div class="loop-label" style="left:700px;top:912px">失败样本回灌</div>
 
-  <div class="watermark">cheerfunfun：https://github.com/QingyaFan/blog</div>
+  <svg class="watermark" viewBox="0 0 1280 960" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="wm" width="420" height="170" patternUnits="userSpaceOnUse" patternTransform="rotate(-28)">
+        <text x="0" y="72" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20"
+              font-weight="600" fill="#7A8492" opacity="0.10">cheerfunfun</text>
+        <text x="0" y="98" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18"
+              fill="#7A8492" opacity="0.10">github.com/QingyaFan/blog</text>
+      </pattern>
+    </defs>
+    <rect width="1280" height="960" fill="url(#wm)"/>
+  </svg>
 
-  <svg class="wires" viewBox="0 0 1280 1000" xmlns="http://www.w3.org/2000/svg">
+  <svg class="wires" viewBox="0 0 1280 960" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
         <path d="M0,0 L10,5 L0,10 z" fill="#3D4855"/>
