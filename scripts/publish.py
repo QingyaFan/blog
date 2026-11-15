@@ -8,6 +8,7 @@
   2. a raw GitHub URL if the image is tracked in git;
   3. unchanged (with a warning) if the image is untracked.
 - Use --dry-run to preview and --force to bypass the remote-update check.
+- Appends the CC BY-NC-SA 4.0 attribution footer when it is absent.
 """
 
 import argparse
@@ -22,6 +23,11 @@ REPO = "QingyaFan/blog"
 BRANCH = "master"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_PREFIX = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/images/"
+CONTENT_FOOTER = (
+    "\n\n---\n\n"
+    "本文采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) "
+    "许可，转载请注明作者与原文链接。\n"
+)
 
 FM_RE = re.compile(r"\A---\n(.*?)\n---\n?", re.S)
 IMG_RE = re.compile(r'(?P<prefix>\]\(|src=")(?P<path>(?:\.\./|\./)?images/[^)\s"]+)')
@@ -137,6 +143,12 @@ def rewrite_images(body, image_map, tracked):
     return IMG_RE.sub(repl, body), warnings, raw_names
 
 
+def add_content_footer(body):
+    if "CC BY-NC-SA 4.0" in body:
+        return body
+    return body.rstrip() + CONTENT_FOOTER
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("file", help="path to the Markdown file to publish")
@@ -160,6 +172,7 @@ def main():
         sys.exit("cannot determine a title")
 
     publish_body, warnings, raw_names = rewrite_images(publish_body, image_map, tracked_images())
+    publish_body = add_content_footer(publish_body)
     mode = f"update #{issue_number}" if issue_number else "create"
 
     print(f"file: {path}")

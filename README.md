@@ -101,3 +101,9 @@ Harness 核心稳定之后，如果单个循环不够用，再进入控制流与
 3. [OpenTelemetry 的设计](https://github.com/QingyaFan/blog/issues/57)
 4. [Prometheus 横向扩展](https://github.com/QingyaFan/blog/issues/37)
 5. [Prometheus 数据压缩](https://github.com/QingyaFan/blog/issues/38)
+
+## 版权与许可
+
+- 代码与脚本：MIT，见 [LICENSE](LICENSE)。
+- 文章正文与原创配图：CC BY-NC-SA 4.0，见 [LICENSE-CONTENT](LICENSE-CONTENT)；GitHub Issues 中发布的文章同样适用。
+- 转载请注明作者与原文链接，禁止商业使用；商业授权请联系作者。
