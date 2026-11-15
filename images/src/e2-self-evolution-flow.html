@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  :root{
+    --blue:#2E8FE8; --blue-bg:#F2F8FE; --blue-line:#C9E2FA;
+    --teal:#12A594; --teal-bg:#F2FBF9; --teal-line:#BFE8E1;
+    --orange:#E2681A; --orange-bg:#FEF7F2; --orange-line:#F3D6C2;
+    --ink:#1C2430; --text:#3D4855; --muted:#7A8492; --line:#C6CDD8; --wash:#F3F5F8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;width:1280px;height:960px;overflow:hidden;background:#fff;color:var(--text);
+    font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",Arial,sans-serif}
+  body{box-shadow:inset 0 0 0 1px var(--line)}
+  .canvas{position:relative;width:1280px;height:960px}
+  .zone-title{position:absolute;z-index:5;font-size:22px;font-weight:700;color:var(--ink);letter-spacing:.5px}
+  .zone-title span{font-size:18px;font-weight:400;color:var(--muted);margin-left:12px;letter-spacing:0}
+  .panel{position:absolute;z-index:0;border:1.5px solid #D5DCE5;border-radius:12px;
+    background:linear-gradient(135deg,#F8FBFF 0%,#FFFFFF 72%)}
+  .card{position:absolute;z-index:2;background:#fff;border:2px solid var(--line);border-radius:10px;
+    padding:12px 16px;display:flex;flex-direction:column;justify-content:center}
+  .card b{display:block;font-size:20px;color:var(--ink);line-height:1.3;font-weight:700}
+  .card small{display:block;font-size:18px;color:var(--muted);line-height:1.4;margin-top:3px}
+  .source{border-left:5px solid var(--muted)}
+  .distill{position:absolute;z-index:2;left:40px;top:240px;width:1180px;height:70px;background:#fff;
+    border:2px solid var(--blue);border-radius:10px;display:flex;align-items:center;padding:0 24px;gap:18px}
+  .distill b{font-size:22px;color:var(--ink);white-space:nowrap}
+  .distill span{font-size:18px;color:var(--text)}
+  .diamond-svg{position:absolute;z-index:3;left:580px;top:348px;width:120px;height:70px;overflow:visible}
+  .col{position:absolute;z-index:1;top:450px;height:300px;border-radius:10px;border:2px solid;background:#fff}
+  .col.mem{left:40px;width:340px;border-color:var(--teal)}
+  .col.skill{left:430px;width:420px;border-color:var(--blue)}
+  .col.policy{left:900px;width:340px;border-color:var(--orange)}
+  .col-head{position:absolute;left:14px;top:9px;z-index:3;font-size:20px;font-weight:700;line-height:1.25}
+  .col-sub{position:absolute;left:14px;top:34px;z-index:3;font-size:18px;color:var(--muted);line-height:1.3}
+  .node{position:absolute;z-index:2;height:50px;border-radius:8px;border:1.5px solid;display:flex;
+    align-items:center;padding:0 14px;font-size:18px;color:var(--ink);background:#fff;line-height:1.2;white-space:nowrap}
+  .mem .node{border-color:var(--teal-line);background:var(--teal-bg)}
+  .skill .node{border-color:var(--blue-line);background:var(--blue-bg)}
+  .policy .node{border-color:var(--orange-line);background:var(--orange-bg)}
+  .result-title{position:absolute;z-index:5;font-size:22px;font-weight:700;color:var(--ink)}
+  .result-title span{font-size:18px;font-weight:400;color:var(--muted);margin-left:12px}
+  .result{border-top:5px solid}
+  .result.mem{border-top-color:var(--teal)}
+  .result.skill{border-top-color:var(--blue)}
+  .result.audit{border-top-color:var(--muted)}
+  .loop-label{position:absolute;z-index:5;left:555px;top:908px;background:#fff;padding:0 10px;
+    font-size:18px;color:var(--muted)}
+  .wires{position:absolute;inset:0;width:1280px;height:960px;z-index:1;pointer-events:none;overflow:visible}
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <div class="zone-title" style="left:40px;top:30px">原料<span>4 类证据，每条都带来源</span></div>
+  <div class="zone-title" style="left:40px;top:190px">管线</div>
+  <div class="result-title" style="left:40px;top:776px">结果</div>
+
+  <div class="panel" style="left:20px;top:220px;width:1240px;height:550px"></div>
+
+  <div class="card source" style="left:40px;top:65px;width:280px;height:100px">
+    <b>transcript / 失败样本</b><small>run_id · transcript_id</small>
+  </div>
+  <div class="card source" style="left:340px;top:65px;width:280px;height:100px">
+    <b>评测结果 / 回归差异</b><small>pass^k · 失败项</small>
+  </div>
+  <div class="card source" style="left:640px;top:65px;width:280px;height:100px">
+    <b>人类反馈 / 审批记录</b><small>approver · 理由</small>
+  </div>
+  <div class="card source" style="left:940px;top:65px;width:280px;height:100px">
+    <b>工具结果 / 记忆</b><small>错误信封 · 来源</small>
+  </div>
+
+  <div class="distill"><b>蒸馏 make_candidate</b><span>每条证据带 run_id · transcript_id · trust · samples</span></div>
+
+  <svg class="diamond-svg" viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="60,2 118,35 60,68 2,35" fill="#fff" stroke="#1C2430" stroke-width="2"/>
+    <text x="60" y="30" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif"
+          font-size="18" font-weight="700" fill="#1C2430">按风险</text>
+    <text x="60" y="50" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif"
+          font-size="18" font-weight="700" fill="#1C2430">分流</text>
+  </svg>
+
+  <div class="col mem">
+    <div class="col-head" style="color:var(--teal)">记忆通道</div>
+    <div class="col-sub">自动写，不自动信</div>
+    <div class="node" style="left:12px;top:68px;width:316px">候选（memory）</div>
+    <div class="node" style="left:12px;top:126px;width:316px">自动写：scope + TTL</div>
+    <div class="node" style="left:12px;top:184px;width:316px">去重 / 冲突检测</div>
+    <div class="node" style="left:12px;top:242px;width:316px">按来源撤销（revoke）</div>
+  </div>
+
+  <div class="col skill">
+    <div class="col-head" style="color:var(--blue)">技能通道</div>
+    <div class="col-sub">评测 + 灰度 + 人工确认</div>
+    <div class="node" style="left:12px;top:68px;width:396px">候选（SKILL.md）</div>
+    <div class="node" style="left:12px;top:126px;width:396px">评测门：pass^k + 回归</div>
+    <div class="node" style="left:12px;top:184px;width:396px">灰度：10% run，5% / 2s / 0</div>
+    <div class="node" style="left:12px;top:242px;width:396px">人工确认：禁止自批</div>
+  </div>
+
+  <div class="col policy">
+    <div class="col-head" style="color:var(--orange)">规则通道</div>
+    <div class="col-sub">人类否决权，禁止自批</div>
+    <div class="node" style="left:12px;top:68px;width:316px">候选（policy）</div>
+    <div class="node" style="left:12px;top:126px;width:316px">评测门：回归 + 注入</div>
+    <div class="node" style="left:12px;top:184px;width:316px">提案者回避</div>
+    <div class="node" style="left:12px;top:242px;width:316px">人类双签：高风险 2 人</div>
+  </div>
+
+  <div class="card result mem" style="left:40px;top:808px;width:340px;height:100px">
+    <b>记忆条目</b><small>provenance · TTL · 按来源撤销</small>
+  </div>
+  <div class="card result skill" style="left:430px;top:808px;width:420px;height:100px">
+    <b>stable 指针</b><small>新 run 用新版，in-flight 按 pin 继续</small>
+    <small>拒绝 / 回滚只切指针，版本保留</small>
+  </div>
+  <div class="card result audit" style="left:900px;top:808px;width:340px;height:100px">
+    <b>审计事件</b><small>proposed → promoted / rolled_back</small>
+    <small>每次变更留痕，可追溯到证据</small>
+  </div>
+
+  <div class="loop-label" style="left:700px;top:912px">失败样本回灌</div>
+
+  <svg class="wires" viewBox="0 0 1280 960" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#3D4855"/>
+      </marker>
+      <marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#12A594"/>
+      </marker>
+      <marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#2E8FE8"/>
+      </marker>
+      <marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#E2681A"/>
+      </marker>
+    </defs>
+
+    <!-- sources -> distill -->
+    <path d="M180,165 V236" stroke="#3D4855" stroke-width="2" fill="none" marker-end="url(#a-gray)"/>
+    <path d="M480,165 V236" stroke="#3D4855" stroke-width="2" fill="none" marker-end="url(#a-gray)"/>
+    <path d="M780,165 V236" stroke="#3D4855" stroke-width="2" fill="none" marker-end="url(#a-gray)"/>
+    <path d="M1080,165 V236" stroke="#3D4855" stroke-width="2" fill="none" marker-end="url(#a-gray)"/>
+
+    <!-- distill -> split -->
+    <path d="M640,310 V346" stroke="#3D4855" stroke-width="2" fill="none" marker-end="url(#a-gray)"/>
+
+    <!-- split bus -> columns -->
+    <path d="M640,418 V435" stroke="#3D4855" stroke-width="2" fill="none"/>
+    <path d="M210,435 H1070" stroke="#3D4855" stroke-width="2" fill="none"/>
+    <path d="M210,435 V448" stroke="#3D4855" stroke-width="2" fill="none" marker-end="url(#a-gray)"/>
+    <path d="M640,435 V448" stroke="#3D4855" stroke-width="2" fill="none" marker-end="url(#a-gray)"/>
+    <path d="M1070,435 V448" stroke="#3D4855" stroke-width="2" fill="none" marker-end="url(#a-gray)"/>
+
+    <!-- memory lane -->
+    <path d="M210,568 V574" stroke="#12A594" stroke-width="2" fill="none" marker-end="url(#a-teal)"/>
+    <path d="M210,626 V632" stroke="#12A594" stroke-width="2" fill="none" marker-end="url(#a-teal)"/>
+    <path d="M210,684 V690" stroke="#12A594" stroke-width="2" fill="none" marker-end="url(#a-teal)"/>
+
+    <!-- skill lane -->
+    <path d="M640,568 V574" stroke="#2E8FE8" stroke-width="2" fill="none" marker-end="url(#a-blue)"/>
+    <path d="M640,626 V632" stroke="#2E8FE8" stroke-width="2" fill="none" marker-end="url(#a-blue)"/>
+    <path d="M640,684 V690" stroke="#2E8FE8" stroke-width="2" fill="none" marker-end="url(#a-blue)"/>
+
+    <!-- policy lane -->
+    <path d="M1070,568 V574" stroke="#E2681A" stroke-width="2" fill="none" marker-end="url(#a-orange)"/>
+    <path d="M1070,626 V632" stroke="#E2681A" stroke-width="2" fill="none" marker-end="url(#a-orange)"/>
+    <path d="M1070,684 V690" stroke="#E2681A" stroke-width="2" fill="none" marker-end="url(#a-orange)"/>
+
+    <!-- columns -> results -->
+    <path d="M210,750 V806" stroke="#12A594" stroke-width="2" fill="none" marker-end="url(#a-teal)"/>
+    <path d="M640,750 V806" stroke="#2E8FE8" stroke-width="2" fill="none" marker-end="url(#a-blue)"/>
+    <path d="M1070,750 L800,806" stroke="#E2681A" stroke-width="2" fill="none" marker-end="url(#a-orange)"/>
+
+    <!-- feedback loop -->
+    <path d="M640,908 V940 H18 V176 H160 V168" stroke="#7A8492" stroke-width="2" stroke-dasharray="7 6"
+          fill="none" marker-end="url(#a-gray)"/>
+  </svg>
+
+</div>
+</body>
+</html>
