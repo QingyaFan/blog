@@ -42,14 +42,15 @@
 - E1 [断点续跑实战：一次崩溃恢复的完整时间线（E1）](https://github.com/QingyaFan/blog/issues/269)
 - E2 [自进化：从经验沉淀到可回滚发布（E2）](https://github.com/QingyaFan/blog/issues/270)
 
-### 进阶：控制流与图编排
+### 进阶：控制流、图编排与多智能体
 
-Harness 核心稳定之后，如果单个循环不够用，再进入控制流与图编排。这两篇不属于 Harness 核心实现，等核心稳定后再读。
+Harness 核心稳定之后，如果单个循环不够用，再进入控制流、图编排与多智能体。这三篇不属于 Harness 核心实现，等核心稳定后再读。
 
 | 编号 | 文章 |
 | --- | --- |
 | A1 | [Loop Engineering：让循环可信](https://github.com/QingyaFan/blog/issues/254) |
 | A2 | [Graph Engineering：让图可信](https://github.com/QingyaFan/blog/issues/255) |
+| A3 | [Multi-Agent Engineering：让协作可信](https://github.com/QingyaFan/blog/issues/271) |
 
 ## ML/AI
 
