@@ -42,6 +42,7 @@
 - E1 [断点续跑实战：一次崩溃恢复的完整时间线（E1）](https://github.com/QingyaFan/blog/issues/269)
 - E2 [自进化：从经验沉淀到可回滚发布（E2）](https://github.com/QingyaFan/blog/issues/270)
 - E3 [子 Agent：把上下文隔离出去（E3）](https://github.com/QingyaFan/blog/issues/272)
+- E4 [Prompt Injection：把不可信内容关进数据面（E4）](https://github.com/QingyaFan/blog/issues/273)
 
 ### 进阶：控制流、图编排与多智能体
 
