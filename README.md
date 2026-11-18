@@ -45,6 +45,7 @@
 | E2 | [自进化：从经验沉淀到可回滚发布（E2）](https://github.com/QingyaFan/blog/issues/270) |
 | E3 | [子 Agent：把上下文隔离出去（E3）](https://github.com/QingyaFan/blog/issues/272) |
 | E4 | [Prompt Injection：把不可信内容关进数据面（E4）](https://github.com/QingyaFan/blog/issues/273) |
+| E5 | [运行沙箱：把整个 Agent 关进笼子（E5）](https://github.com/QingyaFan/blog/issues/274) |
 
 ### 进阶：控制流、图编排与多智能体
 
