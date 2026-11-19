@@ -24,16 +24,16 @@
 | T0   | 理论篇 | [Harness Engineering：从裸循环到可验证运行时](https://github.com/QingyaFan/blog/issues/231) |
 | T1   | 理论篇 | [拆解 Claude Code 的 Harness](https://github.com/QingyaFan/blog/issues/233)                 |
 | T2   | 理论篇 | [智能体评测：方法论全景与框架选型](https://github.com/QingyaFan/blog/issues/245)            |
-| I0   | 实现篇 | [Agent 一上长任务就崩？从零打造可验证 Harness 的 9 层路线（I0 导读）](https://github.com/QingyaFan/blog/issues/259)          |
-| I1   | 实现篇 | [最小循环：让 Agent 跑起来（I1）](https://github.com/QingyaFan/blog/issues/260)                   |
-| I2   | 实现篇 | [工具事务：让失败可归因、可重试（I2）](https://github.com/QingyaFan/blog/issues/261)              |
-| I3   | 实现篇 | [上下文预算：让该看的留下，丢掉的留痕（I3）](https://github.com/QingyaFan/blog/issues/262)        |
-| I4   | 实现篇 | [生命周期：让中断的运行有交代、能接续（I4）](https://github.com/QingyaFan/blog/issues/263)        |
-| I5   | 实现篇 | [权限与沙箱：让否决改变控制流（I5）](https://github.com/QingyaFan/blog/issues/264)                |
-| I6   | 实现篇 | [技能：让上下文只为用到的那一层付费（I6）](https://github.com/QingyaFan/blog/issues/265)          |
-| I7   | 实现篇 | [观测与评测：把运行变成可复现读数（I7）](https://github.com/QingyaFan/blog/issues/266)            |
-| I8   | 实现篇 | [记忆：让跨运行的事实接得上（I8）](https://github.com/QingyaFan/blog/issues/267)                  |
-| I9   | 实现篇 | [Prompt 装配：把各层拼成一次请求（I9）](https://github.com/QingyaFan/blog/issues/268)             |
+| I0   | 实现篇 | [Agent Harness 工程（I0）：Agent 一上长任务就崩？从零打造可验证的 9 层路线](https://github.com/QingyaFan/blog/issues/259)          |
+| I1   | 实现篇 | [Agent Harness 工程（I1）：最小循环——让 Agent 跑起来](https://github.com/QingyaFan/blog/issues/260)                   |
+| I2   | 实现篇 | [Agent Harness 工程（I2）：工具事务——让失败可归因、可重试](https://github.com/QingyaFan/blog/issues/261)              |
+| I3   | 实现篇 | [Agent Harness 工程（I3）：上下文预算——让该看的留下，丢掉的留痕](https://github.com/QingyaFan/blog/issues/262)        |
+| I4   | 实现篇 | [Agent Harness 工程（I4）：生命周期——让中断的运行有交代、能接续](https://github.com/QingyaFan/blog/issues/263)        |
+| I5   | 实现篇 | [Agent Harness 工程（I5）：权限与沙箱——让否决改变控制流](https://github.com/QingyaFan/blog/issues/264)                |
+| I6   | 实现篇 | [Agent Harness 工程（I6）：技能——让上下文只为用到的那一层付费](https://github.com/QingyaFan/blog/issues/265)          |
+| I7   | 实现篇 | [Agent Harness 工程（I7）：观测与评测——把运行变成可复现读数](https://github.com/QingyaFan/blog/issues/266)            |
+| I8   | 实现篇 | [Agent Harness 工程（I8）：记忆——让跨运行的事实接得上](https://github.com/QingyaFan/blog/issues/267)                  |
+| I9   | 实现篇 | [Agent Harness 工程（I9）：Prompt 装配——把各层拼成一次请求](https://github.com/QingyaFan/blog/issues/268)             |
 
 实现篇 I0–I9 已完结。
 
@@ -41,11 +41,11 @@
 
 | 编号 | 文章 |
 | --- | --- |
-| E1 | [断点续跑实战：一次崩溃恢复的完整时间线（E1）](https://github.com/QingyaFan/blog/issues/269) |
-| E2 | [自进化：从经验沉淀到可回滚发布（E2）](https://github.com/QingyaFan/blog/issues/270) |
-| E3 | [子 Agent：把上下文隔离出去（E3）](https://github.com/QingyaFan/blog/issues/272) |
-| E4 | [Prompt Injection：把不可信内容关进数据面（E4）](https://github.com/QingyaFan/blog/issues/273) |
-| E5 | [运行沙箱：把整个 Agent 关进笼子（E5）](https://github.com/QingyaFan/blog/issues/274) |
+| E1 | [Agent Harness 工程（E1）：断点续跑实战——一次崩溃恢复的完整时间线](https://github.com/QingyaFan/blog/issues/269) |
+| E2 | [Agent Harness 工程（E2）：自进化——从经验沉淀到可回滚发布](https://github.com/QingyaFan/blog/issues/270) |
+| E3 | [Agent Harness 工程（E3）：子 Agent——把上下文隔离出去](https://github.com/QingyaFan/blog/issues/272) |
+| E4 | [Agent Harness 工程（E4）：Prompt Injection——把不可信内容关进数据面](https://github.com/QingyaFan/blog/issues/273) |
+| E5 | [Agent Harness 工程（E5）：运行沙箱——把整个 Agent 关进笼子](https://github.com/QingyaFan/blog/issues/274) |
 
 ### 进阶：控制流、图编排与多智能体
 
@@ -53,10 +53,10 @@ Harness 核心稳定之后，如果单个循环不够用，再进入控制流、
 
 | 编号 | 文章 |
 | --- | --- |
-| A1 | [Loop Engineering：让循环可信](https://github.com/QingyaFan/blog/issues/254) |
-| A2 | [Graph Engineering：让图可信](https://github.com/QingyaFan/blog/issues/255) |
-| A3 | [Multi-Agent Engineering：让协作可信](https://github.com/QingyaFan/blog/issues/271) |
-| A4 | [Loop Scheduling：让定时循环可信](https://github.com/QingyaFan/blog/issues/275) |
+| A1 | [Agent Harness 工程（A1）：Loop Engineering——让循环可信](https://github.com/QingyaFan/blog/issues/254) |
+| A2 | [Agent Harness 工程（A2）：Graph Engineering——让图可信](https://github.com/QingyaFan/blog/issues/255) |
+| A3 | [Agent Harness 工程（A3）：Multi-Agent Engineering——让协作可信](https://github.com/QingyaFan/blog/issues/271) |
+| A4 | [Agent Harness 工程（A4）：Loop Scheduling——让定时循环可信](https://github.com/QingyaFan/blog/issues/275) |
 
 ## ML/AI
 
