@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  :root{
+    --blue:#2E8FE8; --ink:#1C2430; --text:#3D4855; --muted:#7A8492; --line:#C6CDD8; --wash:#F3F5F8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;width:1280px;height:520px;overflow:hidden;background:#fff;color:var(--text);
+    font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",Arial,sans-serif}
+  body{box-shadow:inset 0 0 0 1px var(--line)}
+  .canvas{position:relative;width:1280px;height:520px}
+
+  .funnel{position:absolute;left:0;top:0;z-index:0}
+  .wires{position:absolute;left:0;top:0;z-index:1;pointer-events:none}
+
+  .ll{position:absolute;z-index:2;text-align:center;width:340px;left:220px;line-height:1.15}
+  .ll b{display:block;font-size:21px;color:var(--ink);font-weight:700}
+  .ll small{display:block;font-size:16px;color:var(--text);margin-top:3px}
+  .l1{top:126px}.l2{top:246px}.l3{top:374px}
+
+  .tg{position:absolute;z-index:2;font-size:15px;color:var(--text);font-weight:600}
+  .tg1{left:406px;top:196px}
+  .tg2{left:406px;top:314px}
+
+  .hd{position:absolute;z-index:4;top:38px;font-size:19px;font-weight:700;color:var(--ink)}
+  .hd.budget{left:770px}
+  .hd.identity{left:1028px}
+
+  .card{position:absolute;z-index:3;background:#fff;border:2px solid var(--line);border-radius:10px;padding:8px 12px}
+  .card b{display:block;font-size:19px;color:var(--ink);font-weight:700;white-space:nowrap;line-height:1.2}
+  .card small{display:block;font-size:16px;color:var(--muted);margin-top:1px;white-space:nowrap}
+  .budget{left:770px;width:244px}
+  .identity{left:1028px;width:228px}
+  .r1{top:120px}.r2{top:240px}.r3{top:368px}
+
+  .watermark{position:absolute;z-index:5;left:0;top:0;width:1280px;height:520px;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <svg class="funnel" viewBox="0 0 1280 520" xmlns="http://www.w3.org/2000/svg" width="1280" height="520">
+    <polygon points="260,112 520,112 580,184 200,184" fill="#EEF6FE" stroke="#2E8FE8" stroke-width="2.5" stroke-linejoin="round"/>
+    <polygon points="200,232 580,232 660,304 120,304" fill="#D7EAFB" stroke="#2E8FE8" stroke-width="2.5" stroke-linejoin="round"/>
+    <polygon points="120,352 660,352 740,440 40,440" fill="#BFE0FA" stroke="#2E8FE8" stroke-width="2.5" stroke-linejoin="round"/>
+  </svg>
+
+  <svg class="wires" viewBox="0 0 1280 520" width="1280" height="520" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="a-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#2E8FE8"/>
+      </marker>
+    </defs>
+    <line x1="390" y1="190" x2="390" y2="224" stroke="#2E8FE8" stroke-width="2.5" marker-end="url(#a-blue)"/>
+    <line x1="390" y1="310" x2="390" y2="346" stroke="#2E8FE8" stroke-width="2.5" marker-end="url(#a-blue)"/>
+  </svg>
+
+  <div class="ll l1"><b>索引</b><small>常驻 · 每次请求都注入</small></div>
+  <div class="ll l2"><b>正文</b><small>use_skill 之后进入</small></div>
+  <div class="ll l3"><b>资源</b><small>read_skill_resource 之后进入</small></div>
+
+  <div class="tg tg1">use_skill</div>
+  <div class="tg tg2">read_skill_resource</div>
+
+  <div class="hd budget">花多少预算</div>
+  <div class="hd identity">身份由谁记住</div>
+
+  <div class="card budget r1"><b>400 token（默认）</b><small>放不下的进 dropped</small></div>
+  <div class="card budget r2"><b>N token · 无上限</b><small>estimate_text 估算</small></div>
+  <div class="card budget r3"><b>无上限 · 宿主定</b><small>一次读多少进多少</small></div>
+
+  <div class="card identity r1"><b>不记版本</b><small>只有名字与描述</small></div>
+  <div class="card identity r2"><b>sha256 前 8 位</b><small>对 SKILL.md 原始字节</small></div>
+  <div class="card identity r3"><b>绑定已加载技能</b><small>未加载要先 use_skill</small></div>
+
+  <svg class="watermark" viewBox="0 0 1280 520" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="wm" width="420" height="170" patternUnits="userSpaceOnUse" patternTransform="rotate(-28)">
+        <text x="0" y="72" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20"
+              font-weight="600" fill="#7A8492" opacity="0.08">cheerfunfun</text>
+        <text x="0" y="98" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18"
+              fill="#7A8492" opacity="0.08">github.com/QingyaFan/blog</text>
+      </pattern>
+    </defs>
+    <rect width="1280" height="520" fill="url(#wm)"/>
+  </svg>
+
+</div>
+</body>
+</html>
