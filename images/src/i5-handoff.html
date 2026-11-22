@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  :root{
+    --blue:#2E8FE8; --blue-bg:#F3F8FE; --blue-line:#C9E2FA;
+    --orange:#E2681A; --orange-bg:#FEF7F2; --orange-line:#F3D6C2;
+    --ink:#1C2430; --text:#3D4855; --muted:#7A8492; --line:#C6CDD8; --wash:#F3F5F8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;width:1280px;height:760px;overflow:hidden;background:#fff;color:var(--text);
+    font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",Arial,sans-serif}
+  body{box-shadow:inset 0 0 0 1px var(--line)}
+  .canvas{position:relative;width:1280px;height:760px}
+
+  .col-bg{position:absolute;z-index:0;top:96px;height:552px;border:1px solid #DCE5EF;border-radius:12px}
+  .col-bg.left{left:24px;width:462px;background:linear-gradient(135deg,#F3F8FE 0%,#FFFFFF 72%)}
+  .col-bg.right{left:650px;width:606px;background:linear-gradient(135deg,#FEF7F2 0%,#FFFFFF 72%);
+    border-color:#F0DDD0}
+  .band{position:absolute;z-index:0;left:486px;top:96px;width:164px;height:552px;border:2px dashed var(--orange-line);
+    border-radius:12px;background:var(--orange-bg)}
+
+  .head{position:absolute;z-index:7;top:44px;font-size:22px;font-weight:700;line-height:1.2}
+  .head span{font-size:18px;font-weight:400;color:var(--muted);margin-left:10px}
+  .head.left{left:40px;color:var(--blue)}
+  .head.mid{left:486px;width:164px;text-align:center;color:var(--orange)}
+  .head.right{left:666px;color:var(--orange)}
+
+  .card{position:absolute;z-index:2;background:#fff;border-radius:10px;padding:12px 18px 10px 52px;
+    display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+  .card.blue{border:2px solid var(--blue)}
+  .card.orange{border:2px solid var(--orange)}
+  .card b{display:block;font-size:20px;line-height:1.3;color:var(--ink);font-weight:700;white-space:nowrap}
+  .card small{display:block;font-size:18px;line-height:1.35;color:var(--muted);margin-top:2px;white-space:nowrap}
+  .num{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;
+    background:var(--blue);color:#fff;font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+  .card.left{left:40px;width:430px;height:88px}
+  .r1{top:118px}.r2{top:222px}.r3{top:326px}.r4{top:430px}.r5{top:534px}
+
+  .card.right{left:666px;width:574px;padding-left:18px}
+  .tall{top:118px;height:192px;padding:0 18px}
+  .tall b{position:absolute;left:18px;top:4px;margin:0}
+  .exec-line{position:absolute;left:18px;right:18px;height:36px;display:flex;align-items:center;gap:10px;
+    font-size:18px;color:var(--text);line-height:1.4}
+  .exec-line.e1{top:34px}
+  .exec-line.e2{top:134px}
+  .exec-line em{font-style:normal;color:var(--orange);font-weight:700;min-width:116px}
+  .exec-line span{color:var(--muted)}
+
+  .break{position:absolute;z-index:3;left:506px;top:148px;width:28px;height:28px;border-radius:50%;
+    background:#fff;border:2px solid var(--orange);color:var(--orange);font-size:22px;font-weight:700;
+    line-height:24px;text-align:center}
+  .b1{top:148px}.b2{top:252px}.b3{top:356px}.b4{top:460px}.b5{top:564px}
+
+  .legend{position:absolute;z-index:7;left:40px;top:666px;width:620px;height:58px;border:1px solid var(--line);
+    border-radius:8px;background:#fff;display:flex;align-items:center;gap:18px;padding:0 16px;font-size:18px;color:var(--text)}
+  .legend b{font-size:18px;color:var(--ink);font-weight:700;margin-right:2px}
+  .sw{width:14px;height:14px;border-radius:3px;display:inline-block;vertical-align:-2px;margin-right:6px}
+  .sw.blue{background:var(--blue)}
+  .sw.orange{background:var(--orange)}
+  .xmark{color:var(--orange);font-size:22px;font-weight:700;margin-right:6px}
+  .dash{display:inline-block;width:26px;border-top:2px dashed var(--orange);vertical-align:3px;margin-right:6px}
+
+  .watermark{position:absolute;z-index:6;left:0;top:0;width:1280px;height:760px;pointer-events:none}
+  .wires{position:absolute;inset:0;width:1280px;height:760px;z-index:1;pointer-events:none;overflow:visible}
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <div class="col-bg left"></div>
+  <div class="col-bg right"></div>
+  <div class="band"></div>
+
+  <div class="head left">判断点<span>知道事实</span></div>
+  <div class="head mid">交接处</div>
+  <div class="head right">执行点<span>照原样做动作</span></div>
+
+  <div class="card blue left r1"><div class="num">1</div><b>策略 · PermissionPolicy</b><small>算出 DENY</small></div>
+  <div class="card blue left r2"><div class="num">2</div><b>审批 · PermissionGate</b><small>没拿到确定的 Approval</small></div>
+  <div class="card blue left r3"><div class="num">3</div><b>路径 · Workspace</b><small>解析后仍在 root 内</small></div>
+  <div class="card blue left r4"><div class="num">4</div><b>命令 · run_command</b><small>收到 argv 列表</small></div>
+  <div class="card blue left r5"><div class="num">5</div><b>凭证 · CredentialBroker</b><small>只授予 API_TOKEN</small></div>
+
+  <div class="card orange right tall">
+    <b>执行器 · ToolExecutor</b>
+    <div class="exec-line e1"><em>DENY 之后</em><span>handler 照常执行</span></div>
+    <div class="exec-line e2"><em>None / 异常</em><span>当作放行继续写</span></div>
+  </div>
+  <div class="card orange right r3"><b>文件 · read / write / delete</b><small>按原始字符串打开</small></div>
+  <div class="card orange right r4"><b>进程 · SubprocessSandbox</b><small>拼回字符串交给 shell</small></div>
+  <div class="card orange right r5"><b>输出 · transcript / 事件</b><small>token 当普通文本写回</small></div>
+
+  <div class="break b1">×</div>
+  <div class="break b2">×</div>
+  <div class="break b3">×</div>
+  <div class="break b4">×</div>
+  <div class="break b5">×</div>
+
+  <div class="legend">
+    <b>图例</b>
+    <span><i class="sw blue"></i>判断点</span>
+    <span><i class="sw orange"></i>执行点</span>
+    <span><i class="xmark">×</i>交接断点</span>
+    <span><i class="dash"></i>动作仍继续</span>
+  </div>
+
+  <svg class="watermark" viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="wm" width="420" height="170" patternUnits="userSpaceOnUse" patternTransform="rotate(-28)">
+        <text x="0" y="72" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="20"
+              font-weight="600" fill="#7A8492" opacity="0.08">cheerfunfun</text>
+        <text x="0" y="98" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18"
+              fill="#7A8492" opacity="0.08">github.com/QingyaFan/blog</text>
+      </pattern>
+    </defs>
+    <rect width="1280" height="760" fill="url(#wm)"/>
+  </svg>
+
+  <svg class="wires" viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#E2681A"/>
+      </marker>
+    </defs>
+
+    <!-- solid fact lines stop at the gap -->
+    <path d="M470,162 H506" stroke="#2E8FE8" stroke-width="2" fill="none"/>
+    <path d="M470,266 H506" stroke="#2E8FE8" stroke-width="2" fill="none"/>
+    <path d="M470,370 H506" stroke="#2E8FE8" stroke-width="2" fill="none"/>
+    <path d="M470,474 H506" stroke="#2E8FE8" stroke-width="2" fill="none"/>
+    <path d="M470,578 H506" stroke="#2E8FE8" stroke-width="2" fill="none"/>
+
+    <!-- dashed action lines continue after the break -->
+    <path d="M534,162 H664" stroke="#E2681A" stroke-width="2" stroke-dasharray="7 6" fill="none" marker-end="url(#a-orange)"/>
+    <path d="M534,266 H664" stroke="#E2681A" stroke-width="2" stroke-dasharray="7 6" fill="none" marker-end="url(#a-orange)"/>
+    <path d="M534,370 H664" stroke="#E2681A" stroke-width="2" stroke-dasharray="7 6" fill="none" marker-end="url(#a-orange)"/>
+    <path d="M534,474 H664" stroke="#E2681A" stroke-width="2" stroke-dasharray="7 6" fill="none" marker-end="url(#a-orange)"/>
+    <path d="M534,578 H664" stroke="#E2681A" stroke-width="2" stroke-dasharray="7 6" fill="none" marker-end="url(#a-orange)"/>
+  </svg>
+
+</div>
+</body>
+</html>
